@@ -1,0 +1,116 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    h1 { background-color: #333; color: white; padding: 10px; font-size: 20px; text-align: center; }
+
+    .header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #555;
+        padding: 10px 0;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      
+      li a:hover {
+        background-color: #111;
+      }
+
+    .nav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .content {
+        padding: 20px 0;
+    }
+
+    .sidebar {
+        background-color: #ddd;
+        padding: 20px;
+        width: 50%;
+        float: center;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .carousel {
+        width: 60%;
+        overflow: hidden;
+    
+    }
+    .carousel-item img {
+        width: 80%;
+        height: 50%;
+    }
+    
+    .carousel-item img.active {
+        transform: scale(1.2);
+    }
+
+    .carousel img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .carousel .carousel-item {
+        width: 100%;
+        display: none;
+    }
+
+    .carousel .carousel-item:first-child {
+        display: block;
+    }
+    .footer { 
+        margin-top: 20px;
+        background-color: #333; 
+        color: #fff; 
+        text-align: center; 
+        padding: 10px; 
+        bottom: 0; 
+        width: 100%; 
+    }
+
+    @media screen and (max-width: 768px) {
+        .sidebar {
+            width: 100%;
+            float: none;
+        }
+
+        .content {
+            padding: 20px 15px;
+        }
+        .carousel-item img {
+            width: 50%;
+            height: auto;
+        }
+    
+        .carousel-item img.active {
+            transform: scale(1.1);
+        }
+    }
